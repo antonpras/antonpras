@@ -19,7 +19,7 @@
 - 🌱 Sedang belajar... `cara terbaru fine-tuning LLM agar bisa membalas email 'Penting' dari bos.`
 - 👯 Mencari kolaborasi untuk... `proyek yang bisa selesai sendiri setelah di-commit pertama kali.`
 - 💬 Tanya saya tentang... `apa saja, nanti saya teruskan pertanyaannya ke model AI andalan saya.`
-- 📫 Cara menghubungi saya: `Kirim sinyal telepati, atau kalau gagal, coba email: [email.kamu@provider.com]`
+- 📫 Cara menghubungi saya: `Kirim sinyal telepati, atau kalau gagal, coba email: [antoncalderon1105@gmail.com]`
 - 😄 Fakta unik: `Saya punya lebih banyak cron job yang berjalan daripada teman.`
 
 ---
