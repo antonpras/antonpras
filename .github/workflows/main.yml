@@ -2,14 +2,21 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Berjalan setiap 12 jam
+    # Berjalan setiap 12 jam
+    - cron: "0 */12 * * *"
+  # Memungkinkan untuk menjalankan Action ini secara manual dari tab Actions
   workflow_dispatch:
 
 jobs:
   build:
+    # Menambahkan izin agar Action bisa menulis ke repo
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # Menggunakan versi terbaru dari action checkout untuk kompatibilitas
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -18,6 +25,7 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Push to repo
         run: |
           git config --global user.name 'github-actions[bot]'
